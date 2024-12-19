@@ -15,6 +15,7 @@ class Controller
         }
     }
 
+  
     public function view(string $path, array $data = []): void
     {
         $view = APP_ROOT . '/view/' . mb_strtolower($path, 'UTF-8') . '.php';

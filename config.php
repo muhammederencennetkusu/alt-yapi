@@ -10,9 +10,9 @@ define('APP_URL', $base_url);
 
 define('APP_ROOT', dirname(__FILE__));
 define('DB_HOST', 'localhost');
-define('DB_USER', '');
+define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', '');
+define('DB_NAME', 'blog');
 define('DB_CHARSET', 'utf8');
 define('DB_OPTIONS', [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,

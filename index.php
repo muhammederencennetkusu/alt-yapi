@@ -19,5 +19,6 @@ $router->name('catalog.index')->get('/', [App\Catalog\Controller\BaseController:
 
 // admin anasayfası
 $router->name('admin.index')->get('/admin', [App\Admin\Controller\BaseController::class, 'index']);
+$router->name('admin.userAdd')->post('/userAdd', [App\Admin\Controller\BaseController::class, 'userAdd']);
 
 $router->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
